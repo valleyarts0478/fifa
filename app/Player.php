@@ -8,7 +8,7 @@ class Player extends Model
 {
     protected $fillable = ['team_id', 'number', 'p_name'];
 
-    public function teams()
+    public function team()
     {
         return $this->belongsTo(Team::class);
     }
